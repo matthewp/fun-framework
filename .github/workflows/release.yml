@@ -1,0 +1,32 @@
+name: Deploy version
+
+on:
+  push:
+    tags: v*.*.*
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Sass
+      run: npm install -g sass
+    - name: Build
+      run: sass src/fun.scss dist/fun.css
+    - name: Publish
+      uses: matthewp/cdn-spooky-deploy-action@v3.beta.2
+      with:
+        key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+        pkg: 'fun'
+        source: 'dist'
