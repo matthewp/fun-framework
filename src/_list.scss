@@ -1,0 +1,20 @@
+ul, ol {
+	&.fun {
+		padding-left: 2rem;
+		margin: 0 0 2rem;
+		
+		ul, ol { margin-bottom: 0 }
+	}
+}
+
+ul.fun {
+	list-style: disc;
+	
+	ul { list-style: circle }
+}
+
+ol.fun {
+	list-style: decimal;
+	
+	ol { list-style: lower-alpha }
+}

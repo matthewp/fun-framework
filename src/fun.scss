@@ -1,0 +1,63 @@
+@import "./reset.scss";
+@import "./input.scss";
+@import "./fieldset.scss";
+@import "./button.scss";
+@import "./blockquote.scss";
+@import "./code.scss";
+@import "./list.scss";
+@import "./icon.scss";
+
+html {
+  --fun-serif: serif;
+  --fun-sans-serif: sans-serif;
+  --fun-monospace: monospace;
+  
+  // font sizes
+  
+  --fun-fs-xs: 1.1rem;
+  --fun-fs-s: 1.2rem;
+  --fun-fs-m: 1.4rem;
+  --fun-fs-l: 1.6rem;
+  --fun-fs-xl: 2.4rem;
+  
+  // Colors
+  --fun-color-primary: #679;
+  --fun-color-primary-contrast: #fff;
+  --fun-color-secondary: #fd0;
+
+  --fun-hue: 200;
+  --fun-primary-hue: 203;
+  --fun-sat: 20%;
+  --fun-primary-sat: 100%;
+  --fun-outline-sat: 100%;
+
+  --fun-color-black: hsl(var(--fun-hue), var(--fun-sat), 20%);
+
+  --fun-color-ultralight: hsl(var(--fun-hue), var(--fun-sat), 96%);
+  --fun-color-grey-light: hsl(var(--fun-hue), var(--fun-sat), 90%);
+  --fun-color-grey-mid: hsl(var(--fun-hue), var(--fun-sat), 70%);
+  --fun-color-grey-dark: hsl(var(--fun-hue), var(--fun-sat), 50%);
+  --fun-color-grey-ultradark: hsl(var(--fun-hue), var(--fun-sat), 30%);
+
+  --fun-color-primary-50: hsl(var(--fun-primary-hue), var(--fun-primary-sat), 50%);
+
+
+  // transparent overlays to darken or lighten background colour
+
+  --fun-color-dark:				rgba(0,0,0,0.5);
+  --fun-color-darken:			rgba(0,0,0,0.1);
+  --fun-color-light:				rgba(255,255,255,0.5);
+  --fun-color-lighten:			rgba(255,255,255,0.1);
+
+  // focus ring
+  --fun-focus-ring-lightness: 50%;
+  --fun-focus-ring-alpha: 0.33;
+  --fun-focus-ring-width: 3px;
+
+  // shadows
+  --fun-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+
+  // widths
+  --fun-width: 90rem;
+  --fun-width-mobile: 50rem;
+}

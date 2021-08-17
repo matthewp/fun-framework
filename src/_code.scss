@@ -1,0 +1,28 @@
+/*	code
+----------------------------------------------------------------------*/
+
+
+code.fun {
+	display: inline-block;
+	background: var(--fun-color-grey-ultralight);
+	border: 1px solid var(--fun-color-grey-light);
+	padding: 0 0.5rem;
+	color: var(--fun-color-grey-ultradark);
+	font-size: var(--fun-fs-s);
+	line-height: 1.8;
+	font-family: var(--fun-monospace);
+	border-radius: 2px;
+	text-transform: none;
+	font-weight: 300;
+}
+
+pre.fun {
+	code {
+		padding: 2rem;
+		border: none;
+		border-left: 4px solid var(--fun-color-primary);
+		border-radius: 0;
+		width: 100%;
+		display: block;
+	}
+}

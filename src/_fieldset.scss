@@ -1,0 +1,11 @@
+
+fieldset.fun {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  & > legend {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
